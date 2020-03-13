@@ -21,9 +21,9 @@ session_start();
 //         CONSTANTS           //
 // --------------------------- //
 
-// Paths
+// Paths (constente de chemin avec la super globale serveur)
 define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9)); // Pour fonctions d'inclusion php
-define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers etc (html)
+define("PATH", substr($_SERVER['PHP_SELF'], 0, -9)); // Pour images, fichiers etc (html)    
 
 // Website informations
 define("WEBSITE_TITLE", "Mon site");

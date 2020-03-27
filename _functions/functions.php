@@ -10,16 +10,6 @@ function str_secur($string)
 }
 
 /**
- * Permet de sécuriser les mots de passe pour la connexion administrateur 
- * @param $string
- * @return $string
- */
-function sha1_secur($string)
-{
-    return sha1($string);
-}
-
-/**
 * Debug plus lisible des différentes variables
 * @param $var
 */

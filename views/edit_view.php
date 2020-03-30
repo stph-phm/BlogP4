@@ -17,9 +17,9 @@
 
           <div class="form-group">
             <label for="content">Contenu de l'article</label>
-            <textarea id="mytextarea" class="form-control" name="content" rows="10"><?= $article->content ?></textarea>
+            <textarea id="mytextarea" class="form-control" name="content" rows="18"><?= $article->content ?></textarea>
           </div>
-          <button type="submit" name="edit">Modifier</button>
+          <button type="submit" name="edit" class="btn btn-primary">Modifier</button>
         </form>
       </div>
       <?php } else {

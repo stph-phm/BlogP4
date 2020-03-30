@@ -19,7 +19,7 @@
               <label for="content">Contenu de l'article</label>
               <textarea id="mytextarea" class="form-control" name="content" rows="10"></textarea>
             </div>
-            <button type="submit" name="publish">Publier</button>
+            <button class="btn btn-primary " type="submit" name="publish">Publier</button>
           </form>
         </div>
       <?php } else {

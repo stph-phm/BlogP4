@@ -14,7 +14,7 @@
 
     <div class="container">
 
-      <div class="jumbotron jumbotron-fluid bg-light">
+      <div class="jumbotron jumbotron-fluid bg-light p-4">
         <p class="lead"> <?= $article->content ?></p>
         <div class="w-100 text-right">
           <p><?= date_format(date_create($article->date_article), 'd/m/Y')?></p>
@@ -25,9 +25,11 @@
         <?php foreach ($comments as $index => $comment): ?>
         <div class="jumbotron">
           <p class="lead"><?= $comment['pseudo'] ?> à <?= date_format(date_create($comment['date_com']), 'd/m/Y H:i') ?></p>
-          <hr class="my-4">
+          <hr class="my-3">
           <p><?= $comment['comment']?></p>
+
           <?php if ($comment['reported'] == 0) { ?>
+
           <form action="article?id=<?= $article->id ?>&amp;report=<?= $comment['id'] ?>" method="post">
             <button class="btn btn-link p-0" type="submit" name="report">Signaler</button>
           </form>

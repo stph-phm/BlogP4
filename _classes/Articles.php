@@ -63,7 +63,7 @@ class Articles
     {
         global $db;
 
-        $reqArticle = $db->query('SELECT * FROM articles ORDER BY id ASC LIMIT 2');
+        $reqArticle = $db->query('SELECT * FROM articles ORDER BY id ASC LIMIT 4');
 
         return $reqArticle->fetchAll();
     }
@@ -104,10 +104,16 @@ class Articles
     */
     public static function deleteArticle($id)
     {
-        global $db;
+         global $db;
 
-        $id = str_secur($id);
+         $id = str_secur($id);
 
-        $reqArticle = $db->prepare('DELETE FROM articles a, comments c WHERE a.id = $id AND c.article_id');
+         $reqArticle = $db->prepare('DELETE FROM articles WHERE id = ? ');
+         $reqArticle->execute([$id]);
+
+         $reqArticle = $db->prepare('DELETE FROM comments WHERE article_id = ? ');
+         $reqArticle->execute([$id]);
+
+
     }
 }

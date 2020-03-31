@@ -43,6 +43,6 @@ define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
 define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "test");
+define("DATABASE_NAME", "blog");
 define("DATABASE_USER", "root");
 define("DATABASE_PASSWORD", "");

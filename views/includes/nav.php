@@ -24,10 +24,9 @@
     <?php if ($_SESSION) { ?>
 
     <form class="form-inline my-2 my-lg-0" action="#" method="post">
-      <a class="btn btn-primary btn-sm px-2 mr-sm-2" href="admin">Administration</a>
-
-      <button type="submit" class="btn btn-danger btn-sm" name="deconnexion"><span><i class="fas fa-sign-out-alt"></i>
-        </span> Se déconnecter</button>
+      <a class="btn btn-primary btn-sm px-2 mr-sm-2" href="admin"> <span><i class="fas fa-user"></i></span> Administration</a>
+ 
+      <button type="submit" class="btn btn-danger btn-sm" name="deconnexion"><span> <i class="fas fa-sign-out-alt"></i> </span> Se déconnecter</button>
     </form>
 
     <?php } ?>

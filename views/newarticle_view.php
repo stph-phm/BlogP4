@@ -17,7 +17,7 @@
 
             <div class="form-group">
               <label for="content">Contenu de l'article</label>
-              <textarea id="mytextarea" class="form-control" name="content" rows="10"></textarea>
+              <textarea id="mytextarea" class="form-control" name="content" rows="18"></textarea>
             </div>
             <button class="btn btn-primary " type="submit" name="publish">Publier</button>
           </form>

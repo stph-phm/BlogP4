@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html>
   <head>
     <?php include_once 'views/includes/head.php'?>
   </head>

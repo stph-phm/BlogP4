@@ -42,7 +42,7 @@ define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
 // DataBase informations
-define("DATABASE_HOST", "localhost");
-define("DATABASE_NAME", "blog");
-define("DATABASE_USER", "root");
-define("DATABASE_PASSWORD", "");
+define("DATABASE_HOST", "db5000349758.hosting-data.io");
+define("DATABASE_NAME", "dbs340021");
+define("DATABASE_USER", "dbu491118");
+define("DATABASE_PASSWORD", "Projet4_9870");

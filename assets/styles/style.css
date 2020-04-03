@@ -1,0 +1,16 @@
+h1{
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+
+ 
+  }
+  @media (max-width : 40em) {
+    .connect{
+      display: flex;
+      flex-direction: column;
+    }
+  }

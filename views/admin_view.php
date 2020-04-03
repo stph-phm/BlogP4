@@ -103,8 +103,11 @@
                 </div>
               </div>
               <?php
-        } else {
-            echo 'Accès refusé';
+        } else { ?>
+           <div class="container mb-4">
+              <h1 class="text-danger text-center"> ACCES REFUSE  </h1>
+           </div>
+            <?php
         } ?>
       </div>
 
